@@ -11,6 +11,19 @@ See the [YOLOv5 Docs](https://docs.ultralytics.com) for full documentation on tr
 ## <div align="center">Quick Start Examples</div>
 
 <details open>
+<summary>Inference with detect.py</summary>
+
+`detect.py` runs inference on a variety of sources, downloading [models](https://github.com/ultralytics/yolov5/tree/master/models) automatically from
+the latest YOLOv5 [release](https://github.com/ultralytics/yolov5/releases) and saving results to `runs/detect`.
+
+
+```bash
+python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.25 --source data/images/benhphoi.jpg
+
+```
+
+</details>
+<details open>
 <summary>Install</summary>
 
 Clone repo and install [requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) in a
@@ -63,6 +76,11 @@ python detect.py --source 0  # webcam
                           'path/*.jpg'  # glob
                           'https://youtu.be/Zgi9g1ksQHc'  # YouTube
                           'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
+```
+
+```bash
+python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.25 --source data/images/8.jpg
+
 ```
 
 </details>

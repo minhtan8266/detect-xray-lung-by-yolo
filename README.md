@@ -16,7 +16,11 @@ See the [YOLOv5 Docs](https://docs.ultralytics.com) for full documentation on tr
 `detect.py` runs inference on a variety of sources, downloading [models](https://github.com/ultralytics/yolov5/tree/master/models) automatically from
 the latest YOLOv5 [release](https://github.com/ultralytics/yolov5/releases) and saving results to `runs/detect`.
 
+First, need download weight from this link: 
+```bash
+https://drive.google.com/drive/folders/1KKqPFq2-8PMmDaIsekvQdJOzOvIkjei5?usp=sharing
 
+```
 ```bash
 python detect.py --weights runs/train/exp/weights/best.pt --img 640 --conf 0.25 --source data/images/benhphoi.jpg
 
